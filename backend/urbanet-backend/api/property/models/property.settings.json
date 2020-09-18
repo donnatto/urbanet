@@ -9,9 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "propertyId": {
-      "type": "uid"
-    },
     "propertyType": {
       "type": "enumeration",
       "enum": [
@@ -45,8 +42,8 @@
     "category": {
       "type": "enumeration",
       "enum": [
-        "alquiler",
-        "venta"
+        "ALQUILER",
+        "VENTA"
       ],
       "required": true
     },
@@ -64,6 +61,23 @@
     },
     "floorNumber": {
       "type": "integer"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "properties"
+    },
+    "location": {
+      "model": "location",
+      "via": "property"
+    },
+    "landArea": {
+      "type": "decimal",
+      "required": true
+    },
+    "houseArea": {
+      "type": "decimal",
+      "required": true
     }
   }
 }

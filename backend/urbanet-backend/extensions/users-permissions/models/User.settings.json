@@ -76,6 +76,10 @@
     },
     "address": {
       "type": "string"
+    },
+    "properties": {
+      "via": "user",
+      "collection": "property"
     }
   }
 }
