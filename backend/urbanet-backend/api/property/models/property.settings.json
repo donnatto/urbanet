@@ -1,0 +1,69 @@
+{
+  "kind": "collectionType",
+  "collectionName": "properties",
+  "info": {
+    "name": "Property"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "propertyId": {
+      "type": "uid"
+    },
+    "propertyType": {
+      "type": "enumeration",
+      "enum": [
+        "CASA",
+        "DEPARTAMENTO",
+        "LOCAL_COMERCIAL",
+        "OFICINA",
+        "ESTACIONAMIENTO",
+        "TERRENO"
+      ],
+      "required": true
+    },
+    "numberOfRooms": {
+      "type": "integer",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "numberOfBathrooms": {
+      "type": "integer",
+      "required": true
+    },
+    "numberOfParkingLots": {
+      "type": "integer"
+    },
+    "numberOfFloors": {
+      "type": "integer",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "alquiler",
+        "venta"
+      ],
+      "required": true
+    },
+    "price": {
+      "type": "float",
+      "required": true
+    },
+    "currency": {
+      "type": "enumeration",
+      "enum": [
+        "USD",
+        "PEN"
+      ],
+      "required": true
+    },
+    "floorNumber": {
+      "type": "integer"
+    }
+  }
+}
