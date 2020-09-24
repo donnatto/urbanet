@@ -62,11 +62,6 @@
     "floorNumber": {
       "type": "integer"
     },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "properties"
-    },
     "location": {
       "model": "location",
       "via": "property"
@@ -78,6 +73,11 @@
     "houseArea": {
       "type": "decimal",
       "required": true
+    },
+    "user": {
+      "via": "properties",
+      "plugin": "users-permissions",
+      "model": "user"
     }
   }
 }
