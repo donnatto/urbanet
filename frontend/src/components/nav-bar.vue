@@ -15,7 +15,7 @@ export default {
       loggedInNavRoutes: [
         {
           name: 'profile',
-          title: () => 'Logeado como ' + this.currentUser.name,
+          title: () => 'Logeado como ' + this.currentUser.user.username,
         },
         {
           name: 'logout',
