@@ -1346,7 +1346,8 @@
                 "price",
                 "currency",
                 "landArea",
-                "houseArea"
+                "houseArea",
+                "imageURL"
               ],
               "properties": {
                 "id": {
@@ -1392,6 +1393,9 @@
                   "type": "number"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "imageURL": {
                   "type": "string"
                 },
                 "created_by": {

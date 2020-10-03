@@ -525,7 +525,8 @@
           "price",
           "currency",
           "landArea",
-          "houseArea"
+          "houseArea",
+          "imageURL"
         ],
         "properties": {
           "id": {
@@ -688,6 +689,9 @@
               }
             }
           },
+          "imageURL": {
+            "type": "string"
+          },
           "created_by": {
             "required": [
               "id",
@@ -788,7 +792,8 @@
           "price",
           "currency",
           "landArea",
-          "houseArea"
+          "houseArea",
+          "imageURL"
         ],
         "properties": {
           "propertyType": {
@@ -847,6 +852,9 @@
             "type": "number"
           },
           "user": {
+            "type": "string"
+          },
+          "imageURL": {
             "type": "string"
           },
           "created_by": {

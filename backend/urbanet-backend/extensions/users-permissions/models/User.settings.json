@@ -78,8 +78,8 @@
       "type": "string"
     },
     "properties": {
-      "collection": "property",
-      "via": "user"
+      "via": "user",
+      "collection": "property"
     }
   }
 }

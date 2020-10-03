@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "09/26/2020 12:29:01 PM"
+    "x-generation-date": "10/03/2020 12:34:05 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3207,7 +3207,8 @@
               "price",
               "currency",
               "landArea",
-              "houseArea"
+              "houseArea",
+              "imageURL"
             ],
             "properties": {
               "id": {
@@ -3253,6 +3254,9 @@
                 "type": "number"
               },
               "user": {
+                "type": "string"
+              },
+              "imageURL": {
                 "type": "string"
               },
               "created_by": {
@@ -3399,7 +3403,8 @@
           "price",
           "currency",
           "landArea",
-          "houseArea"
+          "houseArea",
+          "imageURL"
         ],
         "properties": {
           "id": {
@@ -3562,6 +3567,9 @@
               }
             }
           },
+          "imageURL": {
+            "type": "string"
+          },
           "created_by": {
             "required": [
               "id",
@@ -3662,7 +3670,8 @@
           "price",
           "currency",
           "landArea",
-          "houseArea"
+          "houseArea",
+          "imageURL"
         ],
         "properties": {
           "propertyType": {
@@ -3721,6 +3730,9 @@
             "type": "number"
           },
           "user": {
+            "type": "string"
+          },
+          "imageURL": {
             "type": "string"
           },
           "created_by": {
@@ -4147,7 +4159,8 @@
                 "price",
                 "currency",
                 "landArea",
-                "houseArea"
+                "houseArea",
+                "imageURL"
               ],
               "properties": {
                 "id": {
@@ -4193,6 +4206,9 @@
                   "type": "number"
                 },
                 "user": {
+                  "type": "string"
+                },
+                "imageURL": {
                   "type": "string"
                 },
                 "created_by": {

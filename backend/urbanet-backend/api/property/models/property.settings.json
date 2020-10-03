@@ -75,9 +75,13 @@
       "required": true
     },
     "user": {
-      "via": "properties",
       "plugin": "users-permissions",
-      "model": "user"
+      "model": "user",
+      "via": "properties"
+    },
+    "imageURL": {
+      "type": "string",
+      "required": true
     }
   }
 }
