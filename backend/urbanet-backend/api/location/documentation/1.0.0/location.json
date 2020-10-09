@@ -554,7 +554,8 @@
               "currency",
               "landArea",
               "houseArea",
-              "imageURL"
+              "imageURL",
+              "antiquity"
             ],
             "properties": {
               "id": {
@@ -603,6 +604,9 @@
                 "type": "string"
               },
               "imageURL": {
+                "type": "string"
+              },
+              "antiquity": {
                 "type": "string"
               },
               "created_by": {

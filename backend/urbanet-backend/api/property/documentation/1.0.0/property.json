@@ -526,7 +526,8 @@
           "currency",
           "landArea",
           "houseArea",
-          "imageURL"
+          "imageURL",
+          "antiquity"
         ],
         "properties": {
           "id": {
@@ -692,6 +693,10 @@
           "imageURL": {
             "type": "string"
           },
+          "antiquity": {
+            "type": "string",
+            "default": "0"
+          },
           "created_by": {
             "required": [
               "id",
@@ -793,7 +798,8 @@
           "currency",
           "landArea",
           "houseArea",
-          "imageURL"
+          "imageURL",
+          "antiquity"
         ],
         "properties": {
           "propertyType": {
@@ -856,6 +862,10 @@
           },
           "imageURL": {
             "type": "string"
+          },
+          "antiquity": {
+            "type": "string",
+            "default": "0"
           },
           "created_by": {
             "type": "string"

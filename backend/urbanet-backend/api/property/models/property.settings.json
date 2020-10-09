@@ -82,6 +82,12 @@
     "imageURL": {
       "type": "string",
       "required": true
+    },
+    "antiquity": {
+      "type": "string",
+      "regex": "^[0-9]+$",
+      "default": "0",
+      "required": true
     }
   }
 }
