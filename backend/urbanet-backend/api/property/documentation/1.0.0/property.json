@@ -527,7 +527,8 @@
           "landArea",
           "houseArea",
           "imageURL",
-          "antiquity"
+          "antiquity",
+          "address"
         ],
         "properties": {
           "id": {
@@ -578,45 +579,6 @@
           },
           "floorNumber": {
             "type": "integer"
-          },
-          "location": {
-            "required": [
-              "id",
-              "address",
-              "district",
-              "department",
-              "country",
-              "city"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "address": {
-                "type": "string"
-              },
-              "district": {
-                "type": "string"
-              },
-              "department": {
-                "type": "string"
-              },
-              "country": {
-                "type": "string"
-              },
-              "city": {
-                "type": "string"
-              },
-              "property": {
-                "type": "string"
-              },
-              "created_by": {
-                "type": "string"
-              },
-              "updated_by": {
-                "type": "string"
-              }
-            }
           },
           "landArea": {
             "type": "number"
@@ -696,6 +658,15 @@
           "antiquity": {
             "type": "string",
             "default": "0"
+          },
+          "address": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
           },
           "created_by": {
             "required": [
@@ -799,7 +770,8 @@
           "landArea",
           "houseArea",
           "imageURL",
-          "antiquity"
+          "antiquity",
+          "address"
         ],
         "properties": {
           "propertyType": {
@@ -848,9 +820,6 @@
           "floorNumber": {
             "type": "integer"
           },
-          "location": {
-            "type": "string"
-          },
           "landArea": {
             "type": "number"
           },
@@ -866,6 +835,15 @@
           "antiquity": {
             "type": "string",
             "default": "0"
+          },
+          "address": {
+            "type": "string"
+          },
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
           },
           "created_by": {
             "type": "string"

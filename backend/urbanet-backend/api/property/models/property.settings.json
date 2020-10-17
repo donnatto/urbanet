@@ -62,10 +62,6 @@
     "floorNumber": {
       "type": "integer"
     },
-    "location": {
-      "model": "location",
-      "via": "property"
-    },
     "landArea": {
       "type": "decimal",
       "required": true
@@ -88,6 +84,16 @@
       "regex": "^[0-9]+$",
       "default": "0",
       "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
     }
   }
 }
