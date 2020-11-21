@@ -1409,6 +1409,9 @@
                 "longitude": {
                   "type": "number"
                 },
+                "view360": {
+                  "type": "string"
+                },
                 "created_by": {
                   "type": "string"
                 },
