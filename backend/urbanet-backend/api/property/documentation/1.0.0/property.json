@@ -735,6 +735,13 @@
               }
             }
           },
+          "separated": {
+            "type": "boolean"
+          },
+          "available": {
+            "type": "boolean",
+            "default": true
+          },
           "created_by": {
             "required": [
               "id",
@@ -911,6 +918,13 @@
           },
           "longitude": {
             "type": "number"
+          },
+          "separated": {
+            "type": "boolean"
+          },
+          "available": {
+            "type": "boolean",
+            "default": true
           },
           "created_by": {
             "type": "string"

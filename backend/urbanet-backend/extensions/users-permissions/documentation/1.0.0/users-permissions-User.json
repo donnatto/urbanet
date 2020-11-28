@@ -1412,6 +1412,12 @@
                 "view360": {
                   "type": "string"
                 },
+                "separated": {
+                  "type": "boolean"
+                },
+                "available": {
+                  "type": "boolean"
+                },
                 "created_by": {
                   "type": "string"
                 },

@@ -105,6 +105,13 @@
       ],
       "plugin": "upload",
       "required": false
+    },
+    "separated": {
+      "type": "boolean"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
