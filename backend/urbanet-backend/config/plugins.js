@@ -3,11 +3,22 @@ module.exports = ({ env }) => ({
   email: {
     provider: 'sendgrid',
     providerOptions: {
-      apiKey: 'SG.O9CVL__xRW6QJ_r_EA1rNg.e8pWM0bEpAM0kWeG-j-pXPPVEMQEuDpkX7MfGoO_ogE', // Ingresar API KEY
+      apiKey: env('SENDGRID_API_KEY'), // Ingresar API KEY
     },
     settings: {
       defaultFrom: 'franco.salcedo.i3@gmail.com',
       defaultReplyTo: 'franco.salcedo.i3@gmail.com',
+    },
+  },
+  upload: {
+    provider: 'aws-s3',
+    providerOptions: {
+      accessKeyId: env('AWS_ACCESS_KEY_ID'),
+      secretAccessKey: env('AWS_ACCESS_SECRET'),
+      region: env('AWS_REGION'),
+      params: {
+        Bucket: env('AWS_BUCKET_NAME'),
+      },
     },
   },
 });
