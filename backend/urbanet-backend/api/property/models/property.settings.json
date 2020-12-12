@@ -62,15 +62,6 @@
     "floorNumber": {
       "type": "integer"
     },
-    "user": {
-      "plugin": "users-permissions",
-      "model": "user",
-      "via": "properties"
-    },
-    "location": {
-      "model": "location",
-      "via": "property"
-    },
     "landArea": {
       "type": "decimal",
       "required": true
@@ -78,6 +69,49 @@
     "houseArea": {
       "type": "decimal",
       "required": true
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "properties"
+    },
+    "imageURL": {
+      "type": "string",
+      "required": true
+    },
+    "antiquity": {
+      "type": "string",
+      "regex": "^[0-9]+$",
+      "default": "0",
+      "required": true
+    },
+    "address": {
+      "type": "text",
+      "required": true
+    },
+    "latitude": {
+      "type": "float"
+    },
+    "longitude": {
+      "type": "float"
+    },
+    "view360": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "separated": {
+      "type": "boolean"
+    },
+    "available": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
